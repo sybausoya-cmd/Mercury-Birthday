@@ -3,80 +3,252 @@
 <html lang="my">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happy Birthday Mercury 💗</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mercury ♡</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  padding: 24px 16px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg,#ffe5f0,#f6e5ff);
+  background: linear-gradient(135deg, #ffe3ee, #f8d9ff, #fff0f5);
   font-family: sans-serif;
   color: #a34272;
   text-align: center;
 }
-.card { padding: 24px; max-width: 340px; }
-.envelope {
-  font-size: 100px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  animation: float 1.5s infinite alternate;
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.82);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(180,90,130,0.15);
 }
-@keyframes float {
-  to { transform: translateY(-10px); }
+
+.heart {
+  font-size: 38px;
+  margin: 8px 0 18px;
 }
-button.open {
-  padding: 14px 24px;
-  border: 0;
-  border-radius: 25px;
-  background: #ec9bc5;
-  color: white;
-  font-size: 17px;
+
+h1 {
+  font-size: 29px;
+  line-height: 1.5;
+  margin: 14px 0;
 }
-.letter {
-  background: #fffafc;
-  padding: 22px;
-  border-radius: 22px;
+
+h2 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+p {
+  font-size: 16px;
   line-height: 1.9;
-  box-shadow: 0 8px 25px #d68bb655;
 }
-.hidden { display: none; }
-.heart { font-size: 25px; }
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 22px;
+  margin: 12px 0;
+  background: #ed8eb7;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(200,100,150,0.2);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.small {
+  font-size: 13px;
+  color: #bc81a0;
+}
+
+#letter {
+  display: none;
+}
+
+.message {
+  text-align: left;
+  white-space: normal;
+}
+
+.signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
 </style>
 </head>
-<body>
-<main class="card">
-  <section id="closed">
-    <div class="heart">♡ 💗 ♡</div>
-    <h2>A little surprise for</h2>
-    <h1>Mercury 🎀</h1>
-    <button class="envelope" onclick="openLetter()">💌</button>
-    <p>Someone has a birthday letter for you!</p>
-    <button class="open" onclick="openLetter()">OPEN YOUR LETTER 💗</button>
-  </section>
 
-  <section id="letter" class="letter hidden">
-    <div style="font-size:55px">🎂💐</div>
-    <h1>HAPPY BIRTHDAY!</h1>
-    <p>Happy birthday to you,<br>
-    Happy birthday to you,<br>
-    Happy birthday dear Mercury,<br>
-    Happy birthday to you! 🎉</p>
-    <hr style="border:1px solid #f5c5dc">
-    <p>ချစ်ရတဲ့ Mercury ရေ 💗</p>
-    <p>မွေးနေ့မှစပြီး နေ့ရက်တိုင်း ပျော်ရွှင်မှုတွေနဲ့ ပြည့်နေပါစေနော်။ လိုချင်တဲ့အရာတိုင်း ပြည့်စုံပြီး အိပ်မက်တွေအားလုံးလည်း အကောင်အထည်ဖော်နိုင်ပါစေ။</p>
-    <p>အမြဲပြုံးပျော်နေနိုင်ပြီး ချစ်ရတဲ့သူတွေနဲ့ ပျော်ရွှင်စွာ နေနိုင်ပါစေ။ ဒီနေ့လေးက Mercury အတွက် အမှတ်တရအကောင်းဆုံးနေ့လေး ဖြစ်ပါစေ။ 🥹💗</p>
-    <h3>With love, from your friend ♡</h3>
-    <div class="heart">🎀 💗 🧸 🌷</div>
-  </section>
+<body>
+
+<main class="card">
+
+<section id="closed">
+  <div class="heart">♡ 💗 ♡</div>
+
+  <p>♡ A LITTLE BIRTHDAY SURPRISE ♡</p>
+
+  <h2>Hey Mercury,</h2>
+
+  <h1>This little website is made just for you ♡</h1>
+
+  <p>Someone special made this little page for you. 🤍</p>
+
+  <div class="heart">💌</div>
+
+  <button onclick="openLetter()">
+    OPEN YOUR LETTER ♡
+  </button>
+
+  <p class="small">Made with love, from Soya 🎀</p>
+</section>
+
+
+<section id="letter">
+
+  <div class="heart">🎂 🌷 💗</div>
+
+  <h1>Happy Birthday, Mercury!</h1>
+
+  <p>♡ October's little wish for you ♡</p>
+
+  <hr style="border:0;border-top:1px solid #f4c5d9;margin:22px 0;">
+
+  <div class="message">
+
+    <p>
+      Mercury ရေ… 🤍
+    </p>
+
+    <p>
+      ဒီနေ့လေးက Mercury အတွက်
+      အပျော်ရွှင်ရဆုံးနေ့လေး ဖြစ်ပါစေနော်။
+      ကိုယ်လိုချင်တဲ့အရာတိုင်းကို တစ်နေ့နေ့မှာ
+      ပိုင်ဆိုင်နိုင်ပါစေ။ စိတ်ကူးထားတဲ့
+      အိပ်မက်တွေအားလုံးလည်း တကယ်ဖြစ်လာပါစေ။
+    </p>
+
+    <p>
+      ဘယ်လိုနေ့ရက်မျိုးကို ဖြတ်သန်းနေရပါစေ
+      Mercury ရဲ့ မျက်နှာပေါ်က အပြုံးလေးတွေ
+      ပျောက်မသွားပါစေနဲ့။ စိတ်ညစ်ရတဲ့နေ့တွေထက်
+      ပျော်ရွှင်ရတဲ့နေ့တွေ ပိုများလာပါစေ။
+    </p>
+
+    <p>
+      တချို့လူတွေက ကိုယ့်ဘဝထဲကို
+      ဘယ်လိုရောက်လာခဲ့မှန်းတောင်
+      သတိမထားမိလိုက်ဘူး။ ဒါပေမဲ့ တဖြည်းဖြည်းနဲ့
+      ကိုယ့်အတွက် အရေးပါတဲ့သူတစ်ယောက်
+      ဖြစ်လာတတ်ကြတယ်။
+    </p>
+
+    <p>
+      ဆိုရာအတွက်လည်း Mercury က
+      အဲ့ဒီလိုလူမျိုးလေးတစ်ယောက်ပါပဲ။
+      Mercury ပျော်နေရင် ကိုယ်လည်း ပျော်မိတယ်။
+      Mercury အဆင်ပြေနေရင်လည်း စိတ်အေးရတယ်။
+      Mercury နဲ့ စကားပြောရတဲ့အချိန်လေးတွေက
+      ကိုယ့်အတွက် အမှတ်တရလေးတွေ
+      ဖြစ်နေတတ်တယ်။
+    </p>
+
+    <p>
+      ဒီစာလေးကို ဖတ်တဲ့အချိန်မှာ
+      ဆိုရာ့ရင်ထဲမှာ Mercury အတွက်
+      ကောင်းမွန်တဲ့ဆန္ဒလေးတွေ အများကြီးရှိနေတယ်ဆိုတာ
+      သိစေချင်တယ်။
+    </p>
+
+    <p>
+      ကိုယ်ဖြစ်ချင်တဲ့ပုံစံအတိုင်း မဖြစ်နိုင်တဲ့နေ့တွေ
+      ရှိလာရင်တောင် ကိုယ့်ကိုယ်ကိုယ်
+      အပြစ်မတင်ပါနဲ့နော်။
+      Mercury က Mercury ဖြစ်နေရုံနဲ့တင်
+      တန်ဖိုးရှိတဲ့သူတစ်ယောက်ပါ။
+    </p>
+
+    <p>
+      အနာဂတ်မှာ ဘယ်လိုအရာတွေ ဖြစ်လာမလဲဆိုတာ
+      မသိနိုင်ပေမဲ့ အခုအချိန်မှာတော့
+      Mercury ပျော်ရွှင်နေတာကိုပဲ
+      ဆိုရာ မြင်ချင်ပါတယ်။ ♡
+    </p>
+
+    <p>
+      ဒီမွေးနေ့ကစပြီး Mercury ရဲ့ ဘဝထဲမှာ
+      ကောင်းမွန်တဲ့အရာလေးတွေ အများကြီး
+      ရောက်လာပါစေလို့ ဆိုရာက
+      ဆုတောင်းပေးပါတယ်။
+    </p>
+
+  </div>
+
+  <div class="heart">🎀 💗 🧸 🌷</div>
+
+  <h2>One last thing, Mercury… ♡</h2>
+
+  <p>
+    ဒီကမ္ဘာကြီးမှာ Mercury နဲ့တူတဲ့သူ
+    နောက်တစ်ယောက် ရှိချင်မှရှိမယ်။
+    ဒါကြောင့် ကိုယ့်ရဲ့တန်ဖိုးကို
+    ဘယ်တော့မှ မမေ့ပါနဲ့။
+  </p>
+
+  <p>
+    ဒီနေ့လေးမှာ စတင်ခဲ့တဲ့ အပြုံးတွေ
+    နောက်နေ့တွေမှာလည်း ဆက်ရှိနေပါစေ။
+    Mercury ရဲ့ နေ့ရက်တိုင်းက
+    နွေးထွေးမှုတွေနဲ့ ပြည့်နေပါစေ။
+  </p>
+
+  <p>
+    Happy Birthday, my favorite person. 🫶🏻
+  </p>
+
+  <div class="signature">
+    With love,<br>
+    Soya ♡
+  </div>
+
+  <p style="text-align:center;margin-top:25px;">
+    You deserve all the beautiful things in this world. 🤍
+  </p>
+
+  <button onclick="goBack()">READ AGAIN ♡</button>
+
+</section>
+
 </main>
+
 <script>
 function openLetter() {
-  document.getElementById('closed').classList.add('hidden');
-  document.getElementById('letter').classList.remove('hidden');
+  document.getElementById("closed").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+  window.scrollTo(0, 0);
+}
+
+function goBack() {
+  document.getElementById("letter").style.display = "none";
+  document.getElementById("closed").style.display = "block";
+  window.scrollTo(0, 0);
 }
 </script>
+
 </body>
 </html>
