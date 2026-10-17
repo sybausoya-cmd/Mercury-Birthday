@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Mercury 💗</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg,#ffe5f0,#f6e5ff);
+  font-family: sans-serif;
+  color: #a34272;
+  text-align: center;
+}
+.card { padding: 24px; max-width: 340px; }
+.envelope {
+  font-size: 100px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  animation: float 1.5s infinite alternate;
+}
+@keyframes float {
+  to { transform: translateY(-10px); }
+}
+button.open {
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 25px;
+  background: #ec9bc5;
+  color: white;
+  font-size: 17px;
+}
+.letter {
+  background: #fffafc;
+  padding: 22px;
+  border-radius: 22px;
+  line-height: 1.9;
+  box-shadow: 0 8px 25px #d68bb655;
+}
+.hidden { display: none; }
+.heart { font-size: 25px; }
+</style>
+</head>
+<body>
+<main class="card">
+  <section id="closed">
+    <div class="heart">♡ 💗 ♡</div>
+    <h2>A little surprise for</h2>
+    <h1>Mercury 🎀</h1>
+    <button class="envelope" onclick="openLetter()">💌</button>
+    <p>Someone has a birthday letter for you!</p>
+    <button class="open" onclick="openLetter()">OPEN YOUR LETTER 💗</button>
+  </section>
+
+  <section id="letter" class="letter hidden">
+    <div style="font-size:55px">🎂💐</div>
+    <h1>HAPPY BIRTHDAY!</h1>
+    <p>Happy birthday to you,<br>
+    Happy birthday to you,<br>
+    Happy birthday dear Mercury,<br>
+    Happy birthday to you! 🎉</p>
+    <hr style="border:1px solid #f5c5dc">
+    <p>ချစ်ရတဲ့ Mercury ရေ 💗</p>
+    <p>မွေးနေ့မှစပြီး နေ့ရက်တိုင်း ပျော်ရွှင်မှုတွေနဲ့ ပြည့်နေပါစေနော်။ လိုချင်တဲ့အရာတိုင်း ပြည့်စုံပြီး အိပ်မက်တွေအားလုံးလည်း အကောင်အထည်ဖော်နိုင်ပါစေ။</p>
+    <p>အမြဲပြုံးပျော်နေနိုင်ပြီး ချစ်ရတဲ့သူတွေနဲ့ ပျော်ရွှင်စွာ နေနိုင်ပါစေ။ ဒီနေ့လေးက Mercury အတွက် အမှတ်တရအကောင်းဆုံးနေ့လေး ဖြစ်ပါစေ။ 🥹💗</p>
+    <h3>With love, from your friend ♡</h3>
+    <div class="heart">🎀 💗 🧸 🌷</div>
+  </section>
+</main>
+<script>
+function openLetter() {
+  document.getElementById('closed').classList.add('hidden');
+  document.getElementById('letter').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
